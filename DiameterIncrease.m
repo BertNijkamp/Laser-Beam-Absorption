@@ -1,6 +1,6 @@
 function [diamOut] = DiameterIncrease(diam,D)
-% This function calculates the increase in particle diameter due to two particles overlapping
-% Warning: particles need to have equal diameters
+% This function calculates the increase in particle diameter due to two particles overlapping.
+% The particles need to have equal diameters.
 
 if D < diam
     Drel = D/diam;
