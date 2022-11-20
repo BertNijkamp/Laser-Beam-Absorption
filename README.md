@@ -21,7 +21,7 @@ The other files do the following:
 * *DiameterIncrease.m* calculates the increased diameter of two overlapping particles based on ther diameter and distance from eachother
 * *DrawAbsorption3D.m* renders the spherical particles with a colour based on their absorption
 * *DrawParticles3D.m* renders the spherical particles with a colour based on their diameter
-* *GaussianIntensity.m* calculates the intensity for all rays in a curcular pattern with a total intensity of 1
+* *GaussianIntensity.m* calculates the starting energy for all rays in a curcular pattern with a total energy of 1
 * *InParticle3D.m* checks if a new laser position is inside one or more particles
 * *MatrixToNumber.m* converts a list of particles to a single number
 * *NumberToMatrix.m* converts a single number to a list of particles
