@@ -39,7 +39,7 @@ for count = 1:size(ParticleList,1)
     surf(R*x+X,R*y+Y,R*z+Z,'LineStyle','none','FaceColor',colour)
 end
 
-xlabel('x [-]'),ylabel('y [-]'),zlabel('z [-]')
+xlabel('x [m]'),ylabel('y [m]'),zlabel('z [m]')
 light('Position',[-1 -.5 2],'Color',[.8 .8 .8])
 light('Position',[1 1 -1],'Color',[.2 .2 .2])
 material dull
