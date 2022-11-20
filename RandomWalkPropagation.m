@@ -12,7 +12,7 @@ RefrIndexP = 1.5997;
 RefrIndexA = 1;
 AbsorbedThr = 0.001/NumberOfRays;
 ShowLaser = 1;
-LaserType = 1;                            % 0=solid colour,     1=intensity scale, 2=intensity log scale
+LaserType = 1;                            % 0=solid colour,     1=lin scale, 2=log scale
 GridType = 0;                             % 0=random positions, 1=grid
 LaserAngle = 0;                           %degrees
 LaserList = cell(1,NumberOfRays);
@@ -205,10 +205,10 @@ if ShowLaser == 1
             if LaserType == 0 % Solid colour
                 line(LaserList{RayNr}(Step:Step+1,1),LaserList{RayNr}(Step:Step+1,2),LaserList{RayNr}(Step:Step+1,3),...
                     'Color',[1 0 0],'LineWidth',2)
-            elseif LaserType == 1 % Intensity scale
+            elseif LaserType == 1 % Linear scale
                 line(LaserList{RayNr}(Step:Step+1,1),LaserList{RayNr}(Step:Step+1,2),LaserList{RayNr}(Step:Step+1,3),...
                     'Color',[1 0 0 LaserList{RayNr}(Step,7)*NumberOfRays],'LineWidth',2)
-            elseif LaserType == 2 % Intensity log scale
+            elseif LaserType == 2 % Logarithmic scale
                 line(LaserList{RayNr}(Step:Step+1,1),LaserList{RayNr}(Step:Step+1,2),LaserList{RayNr}(Step:Step+1,3),...
                     'Color',[1 0 0 max(1-log(LaserList{RayNr}(Step,7))/log(AbsorbedThr),0)],'LineWidth',1)
             end
