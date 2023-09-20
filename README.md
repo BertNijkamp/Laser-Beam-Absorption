@@ -27,3 +27,5 @@ The other files do the following:
 * *NumberToMatrix.m* converts a single number to a list of particles
 * *PointsInCircle.m* randomly distributes points in a circle
 * *Refraction3D.m* calculates everything that happens during refraction and reflection
+
+This code is used for the thesis *Modelling of laser beam absorption in powder-based sintering processes*, which can be downloaded [here](http://essay.utwente.nl/93665/ "University of Twente theses repository").
